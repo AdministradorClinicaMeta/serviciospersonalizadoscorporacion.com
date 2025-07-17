@@ -68,5 +68,5 @@ La web presenta la información institucional, misión, visión, valores y empre
 - **Correo:** administracion@freeholdfreezone.com
 - **Teléfono:** +506 2101-2006
 
----
+
 
