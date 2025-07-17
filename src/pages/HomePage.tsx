@@ -27,6 +27,9 @@ export function HomePage() {
     .map((c) => c.name.toUpperCase())
     .join(", ");
 
+  const cardClass =
+    "bg-white/80 backdrop-blur-md rounded-lg border border-white/20";
+
   return (
     <motion.section
       key="home"
@@ -62,7 +65,7 @@ export function HomePage() {
         className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 max-w-4xl"
         variants={itemVariants}
       >
-        <Card className="bg-white/80 backdrop-blur-md rounded-lg border border-white/20">
+        <Card className={cardClass}>
           <CardContent className="p-4 md:p-6 text-center">
             <Users className="w-8 h-8 md:w-10 md:h-10 text-black mx-auto mb-3" />
             <span className="text-2xl md:text-3xl font-bold text-black">
@@ -72,7 +75,7 @@ export function HomePage() {
           </CardContent>
         </Card>
 
-        <Card className="bg-white/80 backdrop-blur-md rounded-lg border border-white/20">
+        <Card className={cardClass}>
           <CardContent className="p-4 md:p-6 text-center">
             <Target className="w-8 h-8 md:w-10 md:h-10 text-black mx-auto mb-3" />
             <span className="text-2xl md:text-3xl font-bold text-black">
@@ -82,7 +85,7 @@ export function HomePage() {
           </CardContent>
         </Card>
 
-        <Card className="bg-white/80 backdrop-blur-md rounded-lg border border-white/20">
+        <Card className={cardClass}>
           <CardContent className="p-4 md:p-6 text-center">
             <Award className="w-8 h-8 md:w-10 md:h-10 text-black mx-auto mb-3" />
             <span className="text-2xl md:text-3xl font-bold text-black">
@@ -120,41 +123,19 @@ export function HomePage() {
           Contacto
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto">
-          <Card className="bg-white/80 backdrop-blur-sm rounded-lg border border-white/20">
-            <CardContent className="p-4 md:p-6 text-center flex flex-col items-center justify-center">
-              <MapPin className="w-8 h-8 md:w-10 md:h-10 text-black mb-4" />
-              <h3 className="text-lg md:text-xl font-bold text-black">
-                Ubicación
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {mainCompany.address}
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-white/80 backdrop-blur-sm rounded-lg border border-white/20">
-            <CardContent className="p-4 md:p-6 text-center flex flex-col items-center justify-center">
-              <Mail className="w-8 h-8 md:w-10 md:h-10 text-black mb-4" />
-              <h3 className="text-lg md:text-xl font-bold text-black">
-                Correo Electrónico
-              </h3>
-              <p className="text-sm md:text-base text-gray-600 break-all">
-                {mainCompany.email}
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-white/80 backdrop-blur-sm rounded-lg border border-white/20">
-            <CardContent className="p-4 md:p-6 text-center flex flex-col items-center justify-center">
-              <Phone className="w-8 h-8 md:w-10 md:h-10 text-black mb-4" />
-              <h3 className="text-lg md:text-xl font-bold text-black">
-                Teléfono
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {mainCompany.phone}
-              </p>
-            </CardContent>
-          </Card>
+          {mainCompany.contact.map((data, index) => (
+            <Card className={cardClass} key={index}>
+              <CardContent className="p-4 md:p-6 text-center flex flex-col items-center justify-center">
+                <MapPin className="w-8 h-8 md:w-10 md:h-10 text-black mb-4" />
+                <h3 className="text-lg md:text-xl font-bold text-black">
+                  {data.title}
+                </h3>
+                <p className="text-sm md:text-base text-gray-600">
+                  {data.info}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </motion.div>
     </motion.section>

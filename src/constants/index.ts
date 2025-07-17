@@ -82,17 +82,28 @@ export const mainCompany = {
   name: "SPI SERVICIOS PERSONALIZADOS CORPORACIÓN",
   description:
     "SPI es un grupo empresarial fundado en Costa Rica, con un portafolio diversificado y una sólida presencia en Centroamérica.",
-  mision:
+  mission:
     "Ser el grupo empresarial líder en la región, reconocido por nuestra innovación, compromiso con la excelencia y el desarrollo sostenible de las comunidades donde operamos.",
   vision:
     "Impulsar el progreso y el bienestar en Centroamérica a través de nuestras diversas unidades de negocio, generando valor para nuestros clientes, colaboradores y accionistas.",
   presidentMessage:
     "Con una trayectoria de más de 15 años, nuestro grupo se ha consolidado como un referente de confianza y solidez. Miramos hacia el futuro con el compromiso de seguir innovando y generando un impacto positivo en la sociedad.",
   logo: "/images/logo.png",
-  email: "administracion@freeholdfreezone.com",
-  phone: "+506 2101-2006",
-  address: "Costa Rica",
   experienceYears: 15,
   successfulProjects: "+100",
   values: ["Integridad", "Innovación", "Excelencia", "Compromiso"],
+  contact: [
+    {
+      title: "Ubicación",
+      info: "Costa Rica",
+    },
+    {
+      title: "Correo Electrónico",
+      info: "administracion@freeholdfreezone.com",
+    },
+    {
+      title: "Teléfono",
+      info: "+506 2101-2006",
+    },
+  ],
 };
