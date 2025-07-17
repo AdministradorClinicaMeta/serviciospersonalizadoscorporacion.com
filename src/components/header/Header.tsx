@@ -2,9 +2,23 @@ import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { navItems } from "@/constants/index";
 import MobileMenu from "./MobileMenu";
+import { useEffect, useState } from "react";
+import { Menu } from "lucide-react";
 
 export default function Header() {
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <>
@@ -63,12 +77,21 @@ export default function Header() {
               </nav>
 
               <div className="md:hidden">
-                <MobileMenu />
+                <button
+                  onClick={() => setIsMobileMenuOpen(true)}
+                  className="p-2 rounded-md text-gray-600 hover:bg-gray-100"
+                >
+                  <Menu className="w-6 h-6" />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </motion.header>
+      <MobileMenu
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
     </>
   );
 }
