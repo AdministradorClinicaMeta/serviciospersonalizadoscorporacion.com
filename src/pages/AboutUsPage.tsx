@@ -75,7 +75,7 @@ export default function AboutUsPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <motion.div variants={itemVariants}>
-          <Card className={cardClass}>
+          <Card className={`${cardClass} h-full`}>
             <CardContent>
               <h2 className="text-2xl font-bold text-black mb-4">
                 Nuestra Misión
@@ -86,7 +86,7 @@ export default function AboutUsPage() {
         </motion.div>
 
         <motion.div variants={itemVariants}>
-          <Card className={cardClass}>
+          <Card className={`${cardClass} h-full`}>
             <CardContent>
               <h2 className="text-2xl font-bold text-black mb-4">
                 Nuestra Visión

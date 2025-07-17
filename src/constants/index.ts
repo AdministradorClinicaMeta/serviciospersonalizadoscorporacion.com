@@ -24,7 +24,7 @@ export const companies: Company[] = [
     name: "FREE HOLD FREE ZONE",
     sector: "Zona Franca",
     description:
-      "Soluciones estratégicas para empresas que buscan operar bajo un régimen de zona franca, optimizando sus operaciones y beneficios fiscales.",
+      "Primera zona franca en zona de Limón.",
     logo: "/images/freehold.png",
   },
   {
@@ -87,13 +87,13 @@ export const companies: Company[] = [
 export const mainCompany: MainCompany = {
   name: "SPI SERVICIOS PERSONALIZADOS CORPORACIÓN",
   description:
-    "SPI es un grupo empresarial fundado en Costa Rica, con un portafolio diversificado y una sólida presencia en Centroamérica.",
+    "SPI es un grupo empresarial fundado en Costa Rica en el año 2003. Desde entonces, ha evolucionado y diversificado su portafolio con la incorporación de distintas empresas, consolidándose como una organización sólida con presencia en Centroamérica. A lo largo de estos años, SPI ha incursionado en múltiples sectores, abarcando desde servicios hasta desarrollos inmobiliarios, lo que le ha permitido generar oportunidades de empleo y crecimiento para cientos de personas en la región. Actualmente, SPI alberga las siguientes empresas:",
   mission:
-    "Ser el grupo empresarial líder en la región, reconocido por nuestra innovación, compromiso con la excelencia y el desarrollo sostenible de las comunidades donde operamos.",
+    "Nuestra misión es desarrollar y fortalecer empresas innovadoras y sostenibles en diversos sectores, generando valor económico y social en Centroamérica. Trabajamos con integridad, compromiso y visión de largo plazo, promoviendo el crecimiento de nuestros colaboradores, aliados y comunidades.",
   vision:
     "Impulsar el progreso y el bienestar en Centroamérica a través de nuestras diversas unidades de negocio, generando valor para nuestros clientes, colaboradores y accionistas.",
   presidentMessage:
-    "Con una trayectoria de más de 15 años, nuestro grupo se ha consolidado como un referente de confianza y solidez. Miramos hacia el futuro con el compromiso de seguir innovando y generando un impacto positivo en la sociedad.",
+    "Como Presidente y fundador de SPI, es un honor liderar este grupo empresarial que desde el año 2003 ha trabajado con determinación, visión y compromiso para construir una organización sólida, diversa y con profundo impacto en Centroamérica. Nuestro crecimiento ha sido el resultado de un enfoque constante en la innovación, la sostenibilidad y la creación de oportunidades para muchas personas. En SPI creemos en el poder de transformar ideas en realidades que generen valor económico y social. Seguiremos trabajando con pasión para fortalecer nuestras empresas, ampliar nuestro alcance regional y dejar una huella positiva en cada comunidad donde operamos.",
   logo: "/images/logo.png",
   experienceYears: 15,
   successfulProjects: "+100",
