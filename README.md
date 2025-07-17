@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+# SPI Servicios Personalizados Corporación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el código fuente de la página web de **SPI Servicios Personalizados Corporación**, un grupo empresarial fundado en Costa Rica con presencia en Centroamérica y un portafolio diversificado de empresas.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La web presenta la información institucional, misión, visión, valores y empresas que conforman el grupo SPI, así como detalles de proyectos destacados como la Zona Franca de Propiedad Libre (Freehold Free Zone S.A.).
 
-## Expanding the ESLint configuration
+## Secciones principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Inicio:** Resumen del grupo, datos clave (años de experiencia, proyectos exitosos, empresas del grupo) y contacto.
+- **Sobre Nosotros:** Historia, misión, visión, valores y mensaje del presidente y fundador, Luis Diego Garro.
+- **Empresas:** Listado de las empresas del grupo, cada una con su sector, descripción y logotipo.
+- **Free Hold Free Zone:** Información detallada sobre el proyecto inmobiliario y logístico en Limón, Costa Rica, incluyendo fases de desarrollo, ubicación estratégica y oportunidades de mercado.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Empresas del grupo
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- FREE HOLD FREE ZONE (Zona Franca)
+- ADDIUVA (Red de Asistencia)
+- BIOMICROTECH (Suministros Médicos)
+- ENVIROMENTAL PARTNERS (Créditos de Carbono)
+- COWORKING PLACE AND HEALTH (Inmobiliaria)
+- META 360 (Educación Técnica)
+- SEMBRADORES UNIDOS (Inmobiliaria)
+- IKI CR KRAV MAGA (Defensa Personal)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Tecnologías utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) para desarrollo y build
+- [Tailwind CSS](https://tailwindcss.com/) para estilos
+- [Framer Motion](https://www.framer.com/motion/) para animaciones
+- [React Router DOM](https://reactrouter.com/) para enrutamiento
+- [Lucide React](https://lucide.dev/) para iconografía
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Instalación y uso
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clona el repositorio:**
+   ```bash
+   git clone <url-del-repo>
+   cd clinica-meta
+   ```
+2. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
+3. **Ejecuta el entorno de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+   El sitio estará disponible en `http://localhost:5173` (o el puerto que indique la terminal).
+
+4. **Comandos adicionales:**
+   - `npm run build`: Genera la versión de producción.
+   - `npm run preview`: Previsualiza la build de producción.
+   - `npm run lint`: Ejecuta el linter para mantener la calidad del código.
+
+## Estructura del proyecto
+
+- `src/pages/`: Páginas principales del sitio.
+- `src/components/`: Componentes reutilizables (UI, header, tarjetas, etc).
+- `src/constants/`: Datos estáticos y de configuración.
+- `public/images/`: Imágenes y logotipos de las empresas.
+
+## Contacto
+
+- **Ubicación:** Costa Rica
+- **Correo:** administracion@freeholdfreezone.com
+- **Teléfono:** +506 2101-2006
+
+---
+
