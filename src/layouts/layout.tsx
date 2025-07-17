@@ -10,14 +10,12 @@ export default function layout() {
           alt="Grayscale city skyline with modern buildings"
           src="/images/background.jpg"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/80 to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/80 to-white" />
       </div>
+
       <div className="relative z-10">
         <Header />
-        <main
-          className="container mx-auto px-4 sm:px-6 py-16 md:py-24 space-y-16"
-          style={{ opacity: 1 }}
-        >
+        <main className="container mx-auto px-4 sm:px-6 py-16 space-y-16">
           <Outlet />
         </main>
       </div>
