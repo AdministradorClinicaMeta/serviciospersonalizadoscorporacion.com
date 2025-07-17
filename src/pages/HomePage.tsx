@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Users, Target, Award, MapPin, Mail, Phone } from "lucide-react";
+import { Users, Target, Award, MapPin } from "lucide-react";
 import { companies, mainCompany } from "@/constants/index";
 import { Card, CardContent } from "@/components/ui/card";
 
