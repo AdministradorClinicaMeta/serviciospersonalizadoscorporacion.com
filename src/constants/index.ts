@@ -1,8 +1,14 @@
+import type { Company, MainCompany } from "@/types/companies.types";
+import type { FreeHold } from "@/types/freeHold.types";
 import {
   Home,
   Info,
   Building2 as BuildingIcon,
   ShieldCheck,
+  DollarSign,
+  Building,
+  Clock,
+  Truck,
 } from "lucide-react";
 
 export const navItems = [
@@ -12,7 +18,7 @@ export const navItems = [
   { path: "/freehold", label: "FREE HOLD FREE ZONE", icon: ShieldCheck },
 ];
 
-export const companies = [
+export const companies: Company[] = [
   {
     id: 1,
     name: "FREE HOLD FREE ZONE",
@@ -78,7 +84,7 @@ export const companies = [
   },
 ];
 
-export const mainCompany = {
+export const mainCompany: MainCompany = {
   name: "SPI SERVICIOS PERSONALIZADOS CORPORACIÓN",
   description:
     "SPI es un grupo empresarial fundado en Costa Rica, con un portafolio diversificado y una sólida presencia en Centroamérica.",
@@ -104,6 +110,74 @@ export const mainCompany = {
     {
       title: "Teléfono",
       info: "+506 2101-2006",
+    },
+  ],
+};
+
+export const freeholdData: FreeHold = {
+  title: "Zona Franca de Propiedad Libre",
+  subtitle: "Resumen Ejecutivo",
+  summary:
+    "La Zona Franca de Propiedad Libre (Freehold Free Zone S.A.) es un ambicioso proyecto de desarrollo inmobiliario de 588,793 m² (145.5 acres), ubicado estratégicamente en Siquirres, Limón, sobre la Ruta 32, conectando la capital con el Puerto de Moín.",
+  details: {
+    location:
+      "Cantón de Siquirres, provincia de Limón, Costa Rica. A 46 millas del Aeropuerto Internacional Juan Santamaría.",
+    legal:
+      "ID# 3-101-704055, folio real 7-108.626-000, plano catastral L-825983-2002.",
+    portProximity:
+      "A solo 31 millas del Puerto de Moín, el más grande del país.",
+    marketOpportunity:
+      "Impulsado por la operación de APM Terminals ($1.000M de inversión) y la creciente necesidad de infraestructura comercial y logística.",
+  },
+  detailsTitle: "Infraestructura y Oportunidad",
+  detailsContent:
+    "Este desarrollo busca aprovechar la creciente necesidad de infraestructura comercial, derivada de la construcción y operación de APM Terminals, un puerto de clase mundial que inició operaciones en febrero de 2019, con capacidad para manejar buques de hasta 8,500 TEUs, operando 24/7 los 365 días del año. Gracias a este tipo de megaproyectos de infraestructura, los desarrollos de zonas francas se vuelven vitales, ya que ofrecen incentivos fiscales atractivos para atraer inversión extranjera directa y nacional.",
+  phasesTitle: "Desarrollo del Proyecto",
+  phases: [
+    {
+      title: "Fase 1",
+      features: [
+        {
+          title: "Inversión inicial",
+          description: "$16.2 millones por parte del desarrollador",
+          icon: DollarSign,
+        },
+        {
+          title: "Capital privado o deuda",
+          description: "$50 millones adicionales",
+          icon: DollarSign,
+        },
+        {
+          title: "Edificios de oficinas",
+          description: "Dos de 3000 m² cada uno (36 oficinas)",
+          icon: Building,
+        },
+        {
+          title: "Bloques comerciales",
+          description: "Diez de 5000 m² cada uno",
+          icon: Building,
+        },
+      ],
+    },
+    {
+      title: "Fase 2",
+      features: [
+        {
+          title: "Período de desarrollo",
+          description: "24 meses",
+          icon: Clock,
+        },
+        {
+          title: "Inversión estimada",
+          description: "$150 millones",
+          icon: DollarSign,
+        },
+        {
+          title: "Parque industrial y logístico",
+          description: "Tamaño cuatro veces mayor que Fase 1",
+          icon: Truck,
+        },
+      ],
     },
   ],
 };

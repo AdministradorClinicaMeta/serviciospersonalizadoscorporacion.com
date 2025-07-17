@@ -3,6 +3,7 @@ import Layout from "@/layouts/layout";
 import { HomePage } from "@/pages/HomePage";
 import AboutUsPage from "@/pages/AboutUsPage";
 import CompaniesPage from "@/pages/CompaniesPage";
+import FreeHoldFreeZonePage from "@/pages/FreeHoldFreeZonePage";
 
 export default function router() {
   return (
@@ -12,7 +13,7 @@ export default function router() {
           <Route path="/" element={<HomePage />} />
           <Route path="/nosotros" element={<AboutUsPage />} />
           <Route path="/empresas" element={<CompaniesPage />} />
-
+          <Route path="/freehold" element={<FreeHoldFreeZonePage />} />
           <Route
             path="*"
             element={
